@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标事件</title>
+		<style type="text/css">
+			body{
+				background-color:rgb(168, 255, 80);
+			}
+			img{
+				width: 400px;
+				height: 300px;
+			}
+			div{
+				width: 300px;
+				height: 300px;
+				margin: 0 auto;
+			}
+		</style>
+		<script type="text/javascript">
+			function my(){
+				alert("吃的");
+			}
+			function myfouse(){
+				var a=document.getElementById("demo");
+				alert("没有了");
+			}
+		</script>
+	</head>
+	<body onload="my()">
+		<div >
+			<img src="xtwz.jpg"/>
+			<input type="text" onchange="myfouse()" id="demo" onblur="myfouse()"/>
+		</div>
+		
+	</body>
+</html>
